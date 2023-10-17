@@ -1,0 +1,30 @@
+.dropdown-menu {
+    background-color: #000000bf !important;
+}
+
+nav {
+    background-color: #4f709c;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+nav a {
+    color: #f5efe7 !important;
+    font-size: 18px !important;
+}
+
+.navbar {
+    justify-content: space-between;
+    gap: 1rem !important;
+}
+
+.disabled {
+    pointer-events: all !important;
+}
+
+.disabled:hover {
+    cursor: not-allowed !important;
+}

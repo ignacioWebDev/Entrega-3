@@ -1,0 +1,18 @@
+@media (max-width:1440px) {
+    .container-cards, .container-cards2, .container-cards3, .container-cards4 {
+        @include contcards (1fr 1fr 1fr, center);
+    }
+    .cards {
+        @include cards (16px, 320px, 10px);
+    }
+    main {
+        .bg-div {
+            width: 100%;
+            height: 500px;
+        }
+    }
+    .container-marcas {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}

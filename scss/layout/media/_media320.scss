@@ -1,0 +1,65 @@
+@media (max-width: 320px) {
+    .container-cards3, .container-cards, .container-cards2, .container-cards4 {
+        @include contcards (1fr 1fr, center)
+    }
+    .cards {
+        width: 8rem;
+    }
+    .container-marcas img {
+        width: 110px;
+        justify-items: center;
+        margin: 10px;
+    }
+    form fieldset button {
+        margin-left: 20px;
+    }
+    main {
+        .grid-img {
+            margin: 20px;
+            grid-template-columns: 300px;
+            grid-template-rows: 500px 350px;
+            margin: 15px;
+            div {
+                width: 280px;
+                p {
+                    margin: 0px;
+                }
+            }
+            .img-imp {
+                height: 90%px;
+                width: 100%;
+            }
+        }
+        .grid-img1 {
+            margin: 20px;
+            grid-template-columns: 300px;
+            grid-template-rows: 500px 300px;
+            margin: 15px;
+            div {
+                p {
+                    margin: 0px;
+                }
+            }
+            .img-imp1 {
+                height: 90%px;
+                width: 100%;
+            }
+        }
+        .grid-img2 {
+            margin: 20px;
+            grid-template-columns: 300px;
+            grid-template-rows: 500px 300px;
+            margin: 15px;
+            div {
+                p {
+                    margin: 0px;
+                }
+            }
+            .img-imp2 {
+                height: 90%px;
+                width: 100%;
+            }
+        }
+    }
+
+}

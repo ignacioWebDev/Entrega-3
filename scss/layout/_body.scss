@@ -1,0 +1,98 @@
+body {
+    background-color: $bg-pricipal !important;
+}
+
+h1 {
+    font-size: 3.125rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+.cards {
+    @include cards (16px, 320px, 10px);
+}
+
+h3 {
+    margin: 1rem;
+}
+
+button a {
+    text-decoration: none;
+}
+
+.img-banner {
+    width: 100% !important;
+}
+
+.div-p-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    color: $bg-secundario;
+}
+
+label {
+    color: $bg-secundario;
+}
+
+.dropdown {
+    button {
+        margin-left: 1.25rem;
+    }
+}
+
+.whatsapp {
+    width: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 70px;
+}
+
+
+
+@keyframes titulo {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.container-cards {
+    @include contcards(repeat(3, 1fr), center)
+}
+
+.container-cards2 {
+    @extend .container-cards;
+}
+
+.container-cards3 {
+    @include contcards(repeat(4, 1fr), center);
+}
+
+.container-cards4 {
+    @extend .container-cards3;
+}
+
+.cards {
+    @include cards (16px, 400px, 10px);
+    & div img {
+        width: 100%;
+    }
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 3px 5px 10px grey;
+        transition: all .5s;
+    }
+}

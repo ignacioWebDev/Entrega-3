@@ -1,0 +1,44 @@
+.div-grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+footer {
+    background-color: $bg-navfoo;
+    padding: 16px;
+    width: 100%;
+    & p, h3 {
+        color: $bg-secundario;
+    }
+    & button {
+        height: 28px;
+        padding: 4px !important;
+    }
+    & input {
+        padding: 4px;
+        border-radius: 3px;
+    }
+    fieldset {
+        display: inline;
+        border-radius: .625rem;
+        padding: .3125rem;
+    }
+}
+
+.div-social-flex {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-input {
+    display: block;
+    margin-left: 32px;
+}
+
+.section-label {
+    margin-left: 32px   ;
+}
